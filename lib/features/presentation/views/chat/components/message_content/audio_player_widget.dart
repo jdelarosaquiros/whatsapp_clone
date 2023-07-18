@@ -27,11 +27,11 @@ class _AudioPlayerWidgetState extends State<AudioPlayerWidget> {
 
   void initAudio() {
     debugPrint("Audio Initialized");
-    audioPlayer.play(UrlSource(widget.message.text));
+    audioPlayer.play(widget.message.text);
     audioPlayer.getDuration().then((value) {
       debugPrint(value.toString());
     });
-    audioPlayer.onPositionChanged.listen((event) {
+    audioPlayer.onAudioPositionChanged.listen((event) {
       setState(() {
         newTiming = event;
       });

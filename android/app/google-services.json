@@ -1,42 +1,49 @@
 {
   "project_info": {
-    "project_number": "528108582188",
-    "project_id": "whatsapp-8d793",
-    "storage_bucket": "whatsapp-8d793.appspot.com"
+    "project_number": "879847783391",
+    "project_id": "whatssap-app-clone",
+    "storage_bucket": "whatssap-app-clone.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:528108582188:android:6544c1493d3433f4f26889",
+        "mobilesdk_app_id": "1:879847783391:android:ac7acbdfb99cdb8dbaa26a",
         "android_client_info": {
           "package_name": "mogohary99.whatsapp_flutter_clone"
         }
       },
       "oauth_client": [
         {
-          "client_id": "528108582188-0d3v7bqfv5vtdhc08th823se96cgsqk0.apps.googleusercontent.com",
+          "client_id": "879847783391-t65j52uvnraugvvkr7d4l70mur7qi1a1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "mogohary99.whatsapp_flutter_clone",
-            "certificate_hash": "09199a03d91f7c6cd3061042942deb2c3f3a93d0"
+            "certificate_hash": "dcc7e01fdde76b46ab66e541b5c510276eaa1a94"
           }
         },
         {
-          "client_id": "528108582188-nveih6hahfhv7sh0cep1kdj8rjgm1loa.apps.googleusercontent.com",
+          "client_id": "879847783391-do0tnd9gfudr2kvo1g6s50pn92m8d4eh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBa-_MafiWD6xzy9aAgoK1hfQ6yjp3u_zg"
+          "current_key": "AIzaSyCRCoSOjNnVVQRwAVjQQgYKtiRYWBzAriQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "528108582188-nveih6hahfhv7sh0cep1kdj8rjgm1loa.apps.googleusercontent.com",
+              "client_id": "879847783391-do0tnd9gfudr2kvo1g6s50pn92m8d4eh.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "879847783391-hno7guko03lf7968f8vo7abr7msplffi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "mogohary99.whatsappFlutterClone"
+              }
             }
           ]
         }

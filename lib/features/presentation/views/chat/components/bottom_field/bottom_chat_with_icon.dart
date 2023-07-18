@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:giphy_get/giphy_get.dart';
+// import 'package:giphy_get/giphy_get.dart';
 
 import '../../../../../../core/shared/commen.dart';
 import '../../../../controllers/bottom_chat_cubit/bottom_chat_cubit.dart';
@@ -98,7 +98,7 @@ class _BottomChatWithIconState extends State<BottomChatWithIcon> {
                     return EmojiPickerWidget(
                       messageController: messageController,
                       onGifButtonTap: () {
-                        selectGif(ChatCubit.get(context));
+                        // selectGif(ChatCubit.get(context));
                       },
                     );
                   },
@@ -119,19 +119,19 @@ class _BottomChatWithIconState extends State<BottomChatWithIcon> {
     );
   }
 
-  void selectGif(ChatCubit cubit) async {
-    final gif = await pickGif(context);
-    sendGifMessage(gif, cubit);
-  }
-
-  void sendGifMessage(GiphyGif? gif, ChatCubit cubit) {
-    if (gif != null) {
-      cubit.sendGifMessage(
-        receiverId: widget.receiverId,
-        gifUrl: gif.url!,
-      );
-    }
-  }
+  // void selectGif(ChatCubit cubit) async {
+  //   final gif = await pickGif(context);
+  //   sendGifMessage(gif, cubit);
+  // }
+  //
+  // void sendGifMessage(GiphyGif? gif, ChatCubit cubit) {
+  //   if (gif != null) {
+  //     cubit.sendGifMessage(
+  //       receiverId: widget.receiverId,
+  //       gifUrl: gif.url!,
+  //     );
+  //   }
+  // }
 
   @override
   void dispose() {

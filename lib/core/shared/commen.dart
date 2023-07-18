@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:giphy_get/giphy_get.dart';
+// import 'package:giphy_get/giphy_get.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -33,19 +33,19 @@ Future<File?> pickImageFromGallery(BuildContext context) async {
   return image;
 }
 
-Future<GiphyGif?> pickGif(BuildContext context) async {
-  GiphyGif? gif;
-  try {
-    gif = await GiphyGet.getGif(
-      context: context,
-      apiKey: 'GmpyPrPF9RVZ1LJY1iAe6O8MTWrBpNob',
-
-    );
-  } catch (e) {
-    showSnackBar(context: context, content: e.toString());
-  }
-  return gif;
-}
+// Future<GiphyGif?> pickGif(BuildContext context) async {
+//   GiphyGif? gif;
+//   try {
+//     gif = await GiphyGet.getGif(
+//       context: context,
+//       apiKey: 'GmpyPrPF9RVZ1LJY1iAe6O8MTWrBpNob',
+//
+//     );
+//   } catch (e) {
+//     showSnackBar(context: context, content: e.toString());
+//   }
+//   return gif;
+// }
 
 
 Future<CroppedFile?> cropImage(String path)async{

@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/enums/messge_type.dart';
@@ -44,15 +46,13 @@ class ReplayMessageCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            Wrap(
               children: [
-                Expanded(
-                  child: Text(
-                    isMe ? 'You' : repliedTo,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: isMe ? Colors.teal : Colors.deepPurple,
-                    ),
+                Text(
+                  isMe ? 'You' : repliedTo,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: isMe ? Colors.teal : Colors.deepPurple,
                   ),
                 ),
                 if (showCloseButton)
@@ -64,7 +64,7 @@ class ReplayMessageCard extends StatelessWidget {
                       Icons.close,
                       size: 16,
                     ),
-                  )
+                  ),
               ],
             ),
             const SizedBox(height: 8),
@@ -101,7 +101,7 @@ class ReplayMessageContent extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         );
       case MessageType.image:
-        return Row(
+        return Wrap(
           children: const [
             Icon(Icons.image,color: Colors.black38,),
             SizedBox(width: 4,),
@@ -112,7 +112,7 @@ class ReplayMessageContent extends StatelessWidget {
           ],
         );
       case MessageType.gif:
-        return Row(
+        return Wrap(
           children: const [
             Icon(Icons.gif),
             Text(
@@ -122,7 +122,7 @@ class ReplayMessageContent extends StatelessWidget {
           ],
         );
       case MessageType.video:
-        return Row(
+        return Wrap(
           children: const [
             Icon(Icons.videocam),
             Text(
@@ -132,7 +132,7 @@ class ReplayMessageContent extends StatelessWidget {
           ],
         );
       case MessageType.audio:
-        return Row(
+        return Wrap(
           children: const [
             Icon(
               Icons.mic,

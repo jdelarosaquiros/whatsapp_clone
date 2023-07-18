@@ -7,6 +7,7 @@ import '../constants/font_manager.dart';
 import '../constants/values_manager.dart';
 
 ThemeData createTheme(IColors iColors) => ThemeData(
+  // useMaterial3: true,
   scaffoldBackgroundColor: iColors.scaffoldBackgroundColor,
   primaryColor: iColors.primaryColor,
   colorScheme: iColors.colorScheme,

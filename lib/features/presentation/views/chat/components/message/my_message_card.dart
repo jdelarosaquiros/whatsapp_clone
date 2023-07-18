@@ -41,7 +41,7 @@ class MyMessageCard extends StatelessWidget {
               ConstrainedBox(
                 constraints: BoxConstraints(
                   maxWidth: context.width(0.8),
-                  maxHeight: 400,
+                  maxHeight: context.height(0.5),
                 ),
                 child: Card(
                   elevation: 2,
@@ -58,21 +58,31 @@ class MyMessageCard extends StatelessWidget {
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       if (isReplying)
                         Padding(
                           padding: const EdgeInsets.all(5.0),
-                          child: ReplayMessageCard(
-                            text: message.repliedMessage,
-                            repliedMessageType: message.repliedMessageType,
-                            isMe: message.repliedTo == message.senderName,
-                            repliedTo: message.repliedTo,
+                          child: Wrap(
+                            children: [
+                              ReplayMessageCard(
+                                text: message.repliedMessage,
+                                repliedMessageType: message.repliedMessageType,
+                                isMe: message.repliedTo == message.senderName,
+                                repliedTo: message.repliedTo,
+                              ),
+                              // SizedBox(width: 30,)
+                            ],
                           ),
                         ),
-                      MessageContent(
-                        message: message,
-                        isMe: true,
+                      Wrap(
+                        children: [
+                          if(isReplying) SizedBox(width: 8),
+                          MessageContent(
+                            message: message,
+                            isMe: true,
+                          ),
+                        ],
                       ),
                     ],
                   ),

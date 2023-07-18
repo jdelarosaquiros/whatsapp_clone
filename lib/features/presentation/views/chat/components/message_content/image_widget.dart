@@ -9,10 +9,12 @@ class ImageWidget extends StatelessWidget {
   super.key,
   required this.message,
   required this.isMe,
+    required this.maxHeight,
   });
 
   final Message message;
   final bool isMe;
+  final int maxHeight;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class ImageWidget extends StatelessWidget {
             CachedNetworkImage(
               imageUrl: message.text,
               fit: BoxFit.cover,
-              maxHeightDiskCache: 390,
+              maxHeightDiskCache: maxHeight,
               placeholder: (context, url) => const SizedBox(),
             ),
             Positioned(

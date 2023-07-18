@@ -7,11 +7,13 @@ import '../../../../../domain/entities/message.dart';
 class VideoPlayerItem extends StatefulWidget {
   final Message message;
   final bool isMe;
+  final double maxHeight;
 
   const VideoPlayerItem({
     super.key,
     required this.message,
     required this.isMe,
+    required this.maxHeight,
   });
 
   @override
@@ -44,40 +46,45 @@ class _VideoPlayerItemState extends State<VideoPlayerItem> {
       padding: const EdgeInsets.all(5.0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
-        child: AspectRatio(
-          aspectRatio: 16 / 9,
-          child: Stack(
-            children: [
-              CachedVideoPlayer(videoPlayerController),
-              Align(
-                alignment: Alignment.center,
-                child: IconButton(
-                  onPressed: () {
-                    if (isPlay) {
-                      videoPlayerController.pause();
-                    } else {
-                      videoPlayerController.play();
-                    }
-                    setState(() {
-                      isPlay = !isPlay;
-                    });
-                  },
-                  icon: Icon(
-                    isPlay ? Icons.pause_circle : Icons.play_circle,
-                    size: 40,
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxHeight: widget.maxHeight,
+          ),
+          child: AspectRatio(
+            aspectRatio: 9 / 16,
+            child: Stack(
+              children: [
+                CachedVideoPlayer(videoPlayerController),
+                Align(
+                  alignment: Alignment.center,
+                  child: IconButton(
+                    onPressed: () {
+                      if (isPlay) {
+                        videoPlayerController.pause();
+                      } else {
+                        videoPlayerController.play();
+                      }
+                      setState(() {
+                        isPlay = !isPlay;
+                      });
+                    },
+                    icon: Icon(
+                      isPlay ? Icons.pause_circle : Icons.play_circle,
+                      size: 40,
+                    ),
                   ),
                 ),
-              ),
-              Positioned(
-                bottom: 0,
-                right: 4,
-                child: TimeSentWidget(
-                  message: widget.message,
-                  isMe: widget.isMe,
-                  textColor: Colors.white,
+                Positioned(
+                  bottom: 0,
+                  right: 4,
+                  child: TimeSentWidget(
+                    message: widget.message,
+                    isMe: widget.isMe,
+                    textColor: Colors.white,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

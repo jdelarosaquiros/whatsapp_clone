@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_flutter_clone/core/extensions/extensions.dart';
 
 import '../../../../../../core/enums/messge_type.dart';
 import '../../../../../domain/entities/message.dart';
@@ -23,9 +24,9 @@ class MessageContent extends StatelessWidget {
       case MessageType.text:
         return TextWidget(message: message, isMe: isMe);
       case MessageType.image:
-        return ImageWidget(message: message, isMe: isMe);
+        return ImageWidget(message: message, isMe: isMe, maxHeight: context.height(0.45).toInt());
       case MessageType.video:
-        return VideoPlayerItem(message: message, isMe: isMe);
+        return VideoPlayerItem(message: message, isMe: isMe, maxHeight: context.height(0.45));
       case MessageType.audio:
         return AudioPlayerWidget(message: message, isMe: isMe);
       default:

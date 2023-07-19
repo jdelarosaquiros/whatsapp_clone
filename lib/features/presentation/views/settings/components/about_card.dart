@@ -27,7 +27,8 @@ class AboutCard extends StatelessWidget {
         ),
         trailing: Icon(
           Icons.edit,
-          color: context.colorScheme.secondary,
+          // TODO: Delete this hard coded color
+          // color: context.colorScheme.secondary,
         ),
       ),
     );

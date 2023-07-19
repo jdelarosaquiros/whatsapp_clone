@@ -13,15 +13,18 @@ class StatusContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey.withOpacity(0.1),
+      // TODO: Delete this hard coded color
+      // color: Colors.grey.withOpacity(0.1),
       child: Container(
         margin: const EdgeInsets.only(top: 10),
         padding: const EdgeInsets.all(16),
         decoration: const BoxDecoration(
-          color: Colors.white,
+          // TODO: Delete this hard coded color
+          // color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.white10,
+              // TODO: Delete this hard coded color
+              // color: Colors.white10,
               offset: Offset(0, 10),
               blurRadius: 20,
             ),

@@ -11,9 +11,11 @@ class EncryptionContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey.withOpacity(0.1),
+      // TODO: Delete this hard coded color
+      // color: Colors.grey.withOpacity(0.1),
       child: Container(
-        color: Colors.white,
+        // TODO: Delete this hard coded color
+        // color: Colors.white,
         margin: const EdgeInsets.only(top: 10),
         padding: const EdgeInsets.all(16),
         child: Column(

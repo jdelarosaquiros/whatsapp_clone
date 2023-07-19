@@ -81,7 +81,8 @@ class _MainLayoutScreenState extends State<MainLayoutScreen>
                   index: _tabController.index,
                 ),
                 bottom: TabBar(
-                  indicatorColor: Colors.white,
+                  // TODO: Delete this hard coded color
+                  // indicatorColor: Colors.white,
                   indicatorWeight: 4,
                   tabs:  <Tab>[
                     Tab(text: AppStrings.chats.toUpperCase()),

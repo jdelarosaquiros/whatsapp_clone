@@ -10,7 +10,8 @@ class CustomNetworkImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipOval(
       child: CircleAvatar(
-        backgroundColor: Colors.white,
+        // TODO: Delete this hard coded color
+        // backgroundColor: Colors.white,
         backgroundImage: const AssetImage(AppImage.genericProfileImage),
         child: Image.network(
           imageUrl ?? '',

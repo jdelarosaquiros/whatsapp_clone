@@ -59,7 +59,8 @@ class ProfileCard extends StatelessWidget {
                     Image.asset(
                       AppImage.qrCode,
                       width: 30,
-                      color: context.colorScheme.secondary,
+                      // TODO: Delete this hard coded color
+                      // color: context.colorScheme.secondary,
                     ),
                   ],
                 ),

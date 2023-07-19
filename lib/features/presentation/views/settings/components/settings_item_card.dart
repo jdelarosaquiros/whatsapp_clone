@@ -20,7 +20,8 @@ class SettingsItemCard extends StatelessWidget {
           children: [
             Icon(
               item['icon'],
-              color: context.colorScheme.onSurface.withOpacity(0.6),
+              // TODO: Delete this hard coded color
+              // color: context.colorScheme.onSurface.withOpacity(0.6),
               size: 26,
             ),
             const SizedBox(

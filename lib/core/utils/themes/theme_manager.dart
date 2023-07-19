@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '/core/utils/thems/styles_manager.dart';
+import '/core/utils/themes/styles_manager.dart';
 import 'my_colors.dart';
 import '../constants/font_manager.dart';
 import '../constants/values_manager.dart';
 
 ThemeData createTheme(IColors iColors) => ThemeData(
-  // useMaterial3: true,
-  scaffoldBackgroundColor: iColors.scaffoldBackgroundColor,
-  primaryColor: iColors.primaryColor,
+  useMaterial3: true,
+  // scaffoldBackgroundColor: iColors.scaffoldBackgroundColor,
+  // primaryColor: iColors.primaryColor,
   colorScheme: iColors.colorScheme,
   brightness: iColors.brightness,
   textTheme: _textTheme(iColors),
   appBarTheme: _appBarTheme(iColors),
-  popupMenuTheme: _popupMenuThemeData(iColors),
-  tabBarTheme: tabBarTheme(),
-  textButtonTheme: _textButtonThemeData(iColors),
-  elevatedButtonTheme: _elevatedButtonThemeData(iColors),
-  inputDecorationTheme: _inputDecorationTheme(iColors),
-  dividerColor: iColors.colorScheme!.secondaryContainer,
+  // popupMenuTheme: _popupMenuThemeData(iColors),
+  tabBarTheme: tabBarTheme(iColors),
+  // textButtonTheme: _textButtonThemeData(iColors),
+  // elevatedButtonTheme: _elevatedButtonThemeData(iColors),
+  // inputDecorationTheme: _inputDecorationTheme(iColors),
+  // dividerColor: iColors.colorScheme!.secondaryContainer,
   progressIndicatorTheme: ProgressIndicatorThemeData(
     color: iColors.primaryColor,
   ),
@@ -78,31 +78,36 @@ TextTheme _textTheme(IColors iColors) {
       )
   );
 }
-
+// TODO: Change the text to use the ones from the text theme instead of hardcoding them here
 AppBarTheme _appBarTheme(IColors colors) {
   return AppBarTheme(
     color: colors.colorScheme!.primary,
     elevation: 0,
-    systemOverlayStyle: SystemUiOverlayStyle(
-      statusBarColor: colors.colorScheme!.primary,
-      statusBarIconBrightness: Brightness.light,
-    ),
+    // systemOverlayStyle: SystemUiOverlayStyle(
+    //   statusBarColor: colors.colorScheme!.primary,
+    //   statusBarIconBrightness: Brightness.light,
+    // ),
     titleTextStyle: TextStyle(
-      color: colors.colorScheme!.onPrimary,
-      fontSize: AppSize.s20,
+      // color: colors.colorScheme!.onPrimary,
+      fontSize: AppSize.s20, // TODO: Change this size (make dynamic)
       fontWeight: FontWeightManager.semiBold,
     ),
+    // toolbarTextStyle: colors.colorScheme!.onPrimary,
     actionsIconTheme: IconThemeData(
-      color: colors.colorScheme!.primaryContainer,
+      // color: colors.colorScheme!.primaryContainer,
       size: FontSize.s26,
     ),
   );
 }
 
-TabBarTheme tabBarTheme() {
-  return const TabBarTheme(
+TabBarTheme tabBarTheme(IColors colors) {
+  return TabBarTheme(
+    labelColor: colors.colorScheme!.onPrimary,
+    // unselectedLabelColor: colors.colorScheme!.surfaceTint,
+    unselectedLabelColor: colors.colorScheme!.outline,
     labelStyle: TextStyle(
-      fontSize: FontSize.s14,
+      // color: colors.colorScheme!.onPrimary,
+      fontSize: FontSize.s14, // TODO: Change this size (make dynamic)
       fontWeight: FontWeightManager.bold,
     ),
   );

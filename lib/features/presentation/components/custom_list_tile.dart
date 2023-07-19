@@ -34,7 +34,8 @@ class CustomListTile extends StatelessWidget {
             onTap: onLeadingTap,
             child: CircleAvatar(
               radius: 20,
-              backgroundColor: Colors.white,
+              // TODO: Delete this hard coded color
+              // backgroundColor: Colors.white,
               child: Image.asset(AppImage.genericProfileImage),
             ),
           ),
@@ -52,8 +53,11 @@ class CustomListTile extends StatelessWidget {
           if (time != null)
             Text(
               time!,
-              style: numOfMessageNotSeen>0
-                  ? context.labelLarge!.copyWith(color: context.colorScheme.onPrimaryContainer)
+              style: numOfMessageNotSeen > 0
+                  ? context.labelLarge!.copyWith(
+                      // TODO: Delete this hard coded color
+                      // color: context.colorScheme.onPrimaryContainer,
+                    )
                   : context.bodyMedium,
             ),
           if (titleButton != null)
@@ -77,10 +81,11 @@ class CustomListTile extends StatelessWidget {
                       maxLines: 1,
                     ),
                   ),
-                  if ( numOfMessageNotSeen >0 )
+                  if (numOfMessageNotSeen > 0)
                     CircleAvatar(
                       minRadius: 12,
-                      backgroundColor: context.colorScheme.onPrimaryContainer,
+                      // TODO: Delete this hard coded color
+                      // backgroundColor: context.colorScheme.onPrimaryContainer,
                       child: Padding(
                         padding: const EdgeInsets.all(4.0),
                         child: Text(

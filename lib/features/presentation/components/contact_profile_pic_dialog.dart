@@ -49,11 +49,13 @@ Future<void> showContactProfilePicDialog(
                   vertical: 8,
                   horizontal: 8,
                 ),
-                color: Colors.black26,
+                // TODO: Delete this hard coded color
+                // color: Colors.black26,
                 child: Text(
                   contact.name,
                   style: const TextStyle(
-                    color: Colors.white,
+                    // TODO: Delete this hard coded color
+                    // color: Colors.white,
                     fontSize: 20,
                   ),
                 ),
@@ -68,7 +70,8 @@ Future<void> showContactProfilePicDialog(
             onPressed: () {},
             icon: Icon(
               Icons.message,
-              color: context.colorScheme.secondary,
+              // TODO: Delete this hard coded color
+              // color: context.colorScheme.secondary,
               size: 25,
             ),
           ),
@@ -76,7 +79,8 @@ Future<void> showContactProfilePicDialog(
             onPressed: () {},
             icon: Icon(
               Icons.call,
-              color: context.colorScheme.primary,
+              // TODO: Delete this hard coded color
+              // color: context.colorScheme.primary,
               size: 25,
             ),
           ),
@@ -84,7 +88,8 @@ Future<void> showContactProfilePicDialog(
             onPressed: () {},
             icon: Icon(
               Icons.videocam,
-              color: context.colorScheme.primary,
+              // TODO: Delete this hard coded color
+              // color: context.colorScheme.primary,
               size: 25,
             ),
           ),
@@ -92,7 +97,8 @@ Future<void> showContactProfilePicDialog(
             onPressed: () {},
             icon: Icon(
               Icons.info_outline_rounded,
-              color: context.colorScheme.primary,
+              // TODO: Delete this hard coded color
+              // color: context.colorScheme.primary,
               size: 25,
             ),
           ),

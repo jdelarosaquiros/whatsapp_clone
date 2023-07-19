@@ -16,10 +16,12 @@ class NewGroupContactCommunityButtonsList extends StatelessWidget {
         CustomListTile(
           onTap: () {},
           leading: CircleAvatar(
-            backgroundColor: context.colorScheme.secondary,
+            // TODO: Delete this hard coded color
+            // backgroundColor: context.colorScheme.secondary,
             child: const Icon(
               Icons.group,
-              color: Colors.white70,
+              // TODO: Delete this hard coded color
+              // color: Colors.white70,
             ),
           ),
           title: AppStrings.newGroup,
@@ -29,10 +31,12 @@ class NewGroupContactCommunityButtonsList extends StatelessWidget {
             FlutterContacts.openExternalInsert();
           },
           leading: CircleAvatar(
-            backgroundColor: context.colorScheme.secondary,
+            // TODO: Delete this hard coded color
+            // backgroundColor: context.colorScheme.secondary,
             child: const Icon(
               Icons.person_add,
-              color: Colors.white70,
+              // TODO: Delete this hard coded color
+              // color: Colors.white70,
             ),
           ),
           title: AppStrings.newContact,
@@ -50,10 +54,12 @@ class NewGroupContactCommunityButtonsList extends StatelessWidget {
         CustomListTile(
           onTap: () {},
           leading: CircleAvatar(
-            backgroundColor: context.colorScheme.secondary,
+            // TODO: Delete this hard coded color
+            // backgroundColor: context.colorScheme.secondary,
             child: const Icon(
               Icons.groups,
-              color: Colors.white70,
+              // TODO: Delete this hard coded color
+              // color: Colors.white70,
             ),
           ),
           title: AppStrings.newCommunity,

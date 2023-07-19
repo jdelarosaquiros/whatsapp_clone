@@ -14,7 +14,8 @@ class VideoViewTopRowWidget extends StatelessWidget {
         IconButton(
           splashRadius: 20,
           iconSize: 30,
-          color: Colors.white,
+          // TODO: Delete this hard coded color
+          // color: Colors.white,
           onPressed: () {
             navigatePop(context);
           },
@@ -23,7 +24,8 @@ class VideoViewTopRowWidget extends StatelessWidget {
         const Spacer(),
         IconButton(
           splashRadius: 20,
-          color: Colors.white,
+          // TODO: Delete this hard coded color
+          // color: Colors.white,
           icon: const Icon(
             Icons.emoji_emotions_outlined,
             size: 27,
@@ -32,7 +34,8 @@ class VideoViewTopRowWidget extends StatelessWidget {
         ),
         IconButton(
           splashRadius: 20,
-          color: Colors.white,
+          // TODO: Delete this hard coded color
+          // color: Colors.white,
           icon: const Icon(
             Icons.title,
             size: 27,
@@ -41,7 +44,8 @@ class VideoViewTopRowWidget extends StatelessWidget {
         ),
         IconButton(
           splashRadius: 20,
-          color: Colors.white,
+          // TODO: Delete this hard coded color
+          // color: Colors.white,
           splashColor: Colors.black38,
           icon: const Icon(
             Icons.edit,

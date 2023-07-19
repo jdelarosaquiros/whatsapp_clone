@@ -18,7 +18,8 @@ class SenderUserProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        // TODO: Delete this hard coded color
+        // backgroundColor: Colors.white,
         body: CustomScrollView(
           slivers: [
             SliverPersistentHeader(

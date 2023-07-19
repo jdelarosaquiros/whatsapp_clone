@@ -38,14 +38,16 @@ class ButtonWidget extends StatelessWidget {
         Icon(
           icon,
           size: 30,
-          color: context.colorScheme.secondary,
+          // TODO: Delete this hard coded color
+          // color: context.colorScheme.secondary,
         ),
         const SizedBox(height: 5),
         Text(
           text,
           style: const TextStyle(
             fontSize: 18,
-            color: Color.fromARGB(255, 8, 141, 125),
+            // TODO: Delete this hard coded color
+            // color: Color.fromARGB(255, 8, 141, 125),
           ),
         ),
       ],

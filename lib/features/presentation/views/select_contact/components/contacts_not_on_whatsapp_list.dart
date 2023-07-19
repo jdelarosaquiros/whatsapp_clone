@@ -29,7 +29,8 @@ class ContactsNotOnWhatsAppList extends StatelessWidget {
             child: Text(
               AppStrings.invite,
               style: TextStyle(
-                color: context.colorScheme.secondary,
+                // TODO: Delete this hard coded color
+                // color: context.colorScheme.secondary,
                 fontWeight: FontWeightManager.medium,
               ),
             ),

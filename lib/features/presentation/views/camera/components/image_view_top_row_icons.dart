@@ -15,7 +15,8 @@ class ImageViewTopRowIcons extends StatelessWidget {
         IconButton(
           splashRadius: 20,
           iconSize: 30,
-          color: Colors.white,
+          // TODO: Delete this hard coded color
+          // color: Colors.white,
           onPressed: () {
             navigatePop(context);
           },

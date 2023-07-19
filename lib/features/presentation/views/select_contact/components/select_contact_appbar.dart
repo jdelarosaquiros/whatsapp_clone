@@ -45,7 +45,8 @@ class SelectContactAppBar extends StatelessWidget
               width: 18,
               height: 18,
               child: CircularProgressIndicator(
-                color: context.colorScheme.onPrimary,
+                // TODO: Delete this hard coded color
+                // color: context.colorScheme.onPrimary,
                 strokeWidth: 2,
               ),
             ),

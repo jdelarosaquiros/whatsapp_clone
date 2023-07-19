@@ -94,12 +94,14 @@ class PickProfileImage extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(
-                color: Colors.grey.shade200,
+                // TODO: Delete this hard coded color
+                // color: Colors.grey.shade200,
               ),
             ),
             child: Icon(
               icon,
-              color: context.colorScheme.secondary,
+              // TODO: Delete this hard coded color
+              // color: context.colorScheme.secondary,
             ),
           ),
         ),

@@ -19,7 +19,8 @@ class ReplayMessageCard extends StatelessWidget {
     this.showCloseButton = false,
     required this.repliedMessageType,
     required this.text,
-    required this.isMe, required this.repliedTo,
+    required this.isMe,
+    required this.repliedTo,
   });
 
   @override
@@ -90,24 +91,37 @@ class ReplayMessageContent extends StatelessWidget {
     required this.text,
   });
 
+  // TODO: Delete hard coded color that were commented out and take text style dynamically from theme
+  // TODO: Customize color for this entire page
   @override
   Widget build(BuildContext context) {
     switch (repliedMessageType) {
       case MessageType.text:
         return Text(
           text,
-          style: const TextStyle(color: Colors.black38, fontSize: 14),
+          style: const TextStyle(
+            // color: Colors.black38,
+            fontSize: 14,
+          ),
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
         );
       case MessageType.image:
-        return Wrap(
-          children: const [
-            Icon(Icons.image,color: Colors.black38,),
-            SizedBox(width: 4,),
+        return const Wrap(
+          children: [
+            Icon(
+              Icons.image,
+              // color: Colors.black38,
+            ),
+            SizedBox(
+              width: 4,
+            ),
             Text(
               'Photo',
-              style: TextStyle(color: Colors.black38, fontSize: 14),
+              style: TextStyle(
+                // color: Colors.black38,
+                fontSize: 14,
+              ),
             ),
           ],
         );
@@ -117,17 +131,26 @@ class ReplayMessageContent extends StatelessWidget {
             Icon(Icons.gif),
             Text(
               'GIF',
-              style: TextStyle(color: Colors.black38, fontSize: 14),
+              style: TextStyle(
+                // color: Colors.black38,
+                fontSize: 14,
+              ),
             ),
           ],
         );
       case MessageType.video:
         return Wrap(
-          children: const [
-            Icon(Icons.videocam),
+          children: [
+            Icon(
+              Icons.videocam,
+              color: Theme.of(context).colorScheme.onSurface
+            ),
             Text(
               'Video',
-              style: TextStyle(color: Colors.black38, fontSize: 14),
+              style: TextStyle(
+                // color: Colors.black38,
+                fontSize: 14,
+              ),
             ),
           ],
         );
@@ -137,11 +160,14 @@ class ReplayMessageContent extends StatelessWidget {
             Icon(
               Icons.mic,
               size: 18,
-              color: Colors.black38,
+              // color: Colors.black38,
             ),
             Text(
               'Voice message',
-              style: TextStyle(color: Colors.black38, fontSize: 14),
+              style: TextStyle(
+                // color: Colors.black38,
+                fontSize: 14,
+              ),
             ),
           ],
         );

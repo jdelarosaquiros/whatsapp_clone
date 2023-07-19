@@ -49,9 +49,11 @@ class SenderUserProfilePageAppBar extends SliverPersistentHeaderDelegate {
     final relativeScroll70px = min(shrinkOffset, 70) / 70;
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-        statusBarColor: appBarColorTween.transform(relativeScroll),
-        statusBarIconBrightness:
-            statusBarBrightnessTween.transform(relativeScroll),
+        // TODO: Delete this hard coded color
+        // statusBarColor: appBarColorTween.transform(relativeScroll),
+        // TODO: Delete this hard coded color
+        // statusBarIconBrightness:
+        //     statusBarBrightnessTween.transform(relativeScroll),
       ),
     );
     return Container(
@@ -67,7 +69,8 @@ class SenderUserProfilePageAppBar extends SliverPersistentHeaderDelegate {
                     navigatePop(context);
                   },
                   icon: const Icon(Icons.arrow_back, size: 25),
-                  color: appbarIconColorTween.transform(relativeScroll),
+                  // TODO: Delete this hard coded color
+                  // color: appbarIconColorTween.transform(relativeScroll),
                 ),
               ),
               Positioned(
@@ -75,7 +78,8 @@ class SenderUserProfilePageAppBar extends SliverPersistentHeaderDelegate {
                 child: IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.more_vert, size: 25),
-                  color: appbarIconColorTween.transform(relativeScroll),
+                  // TODO: Delete this hard coded color
+                  // color: appbarIconColorTween.transform(relativeScroll),
                 ),
               ),
               Positioned(

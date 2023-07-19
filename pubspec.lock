@@ -21,10 +21,10 @@ packages:
     dependency: transitive
     description:
       name: agora_rtm
-      sha256: "219fdd319e97c91a89f5aa7f838e65b5a5d06d55283548de2fe831c6ef69f9d0"
+      sha256: b3b00ef84c385bdb5ebf99402435e88662dd27adfd03e1a0eb323e9e5c7e925f
       url: "https://pub.dev"
     source: hosted
-    version: "1.5.6"
+    version: "1.5.7"
   agora_uikit:
     dependency: "direct main"
     description:
@@ -125,10 +125,10 @@ packages:
     dependency: transitive
     description:
       name: camera_android
-      sha256: f43d07f9d7228ea1ca87d22e30881bd68da4b78484a1fbd1f1408b412a41cefb
+      sha256: cac448df2567b35e2bd70b8c66368fcba4923f88bc898723516c2ce553765db6
       url: "https://pub.dev"
     source: hosted
-    version: "0.10.8+3"
+    version: "0.10.8+4"
   camera_avfoundation:
     dependency: transitive
     description:
@@ -325,10 +325,10 @@ packages:
     dependency: "direct main"
     description:
       name: firebase_auth
-      sha256: "87216661b409575ecb1a7849da38604a0abfcb6497146b66d4832cb97a4c9e0f"
+      sha256: acfbe55bc23e94ccc7228b7fc7b9abc0005597c1de226f6e3a0103ac29728fbe
       url: "https://pub.dev"
     source: hosted
-    version: "4.7.0"
+    version: "4.7.1"
   firebase_auth_platform_interface:
     dependency: transitive
     description:
@@ -341,10 +341,10 @@ packages:
     dependency: transitive
     description:
       name: firebase_auth_web
-      sha256: c74c5753855896b31536b9e151e34bf7eea143f0d9c209947b5f7ddc8e111989
+      sha256: "2e694a612a0739c0cf5f426d515dda37ee5827bab211d16e76bcad6a082925eb"
       url: "https://pub.dev"
     source: hosted
-    version: "5.6.0"
+    version: "5.6.1"
   firebase_core:
     dependency: "direct main"
     description:
@@ -426,10 +426,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_contacts
-      sha256: "22acebf2ae12dd1ba8340a47e5cbe3cb2c91d9d8fe96194195291afec3d56d40"
+      sha256: cb42aafd269c304599349ddf959eb1784396c4a50cc15b15ef3fdb813185203b
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.6"
+    version: "1.1.7"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -532,10 +532,10 @@ packages:
     dependency: transitive
     description:
       name: image_picker_android
-      sha256: d2bab152deb2547ea6f53d82ebca9b7e77386bb706e5789e815d37e08ea475bb
+      sha256: "8179b54039b50eee561676232304f487602e2950ffb3e8995ed9034d6505ca34"
       url: "https://pub.dev"
     source: hosted
-    version: "0.8.7+3"
+    version: "0.8.7+4"
   image_picker_for_web:
     dependency: transitive
     description:
@@ -588,10 +588,10 @@ packages:
     dependency: "direct main"
     description:
       name: intl
-      sha256: a3715e3bc90294e971cb7dc063fbf3cd9ee0ebf8604ffeafabd9e6f16abbdbe6
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.18.0"
+    version: "0.18.1"
   iris_method_channel:
     dependency: transitive
     description:

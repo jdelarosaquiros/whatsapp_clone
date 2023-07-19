@@ -5,13 +5,15 @@ import '../../../../../core/utils/routes/routes_manager.dart';
 
 class FAB extends StatelessWidget {
   final int index;
+
   const FAB({
-  super.key, required this.index,
+    super.key,
+    required this.index,
   });
 
   @override
   Widget build(BuildContext context) {
-    switch(index){
+    switch (index) {
       case 0:
         return const ChatsFAB();
       case 1:
@@ -21,7 +23,6 @@ class FAB extends StatelessWidget {
       default:
         return const ChatsFAB();
     }
-
   }
 }
 
@@ -69,8 +70,13 @@ class StatusTwoFAB extends StatelessWidget {
           width: 45,
           child: FloatingActionButton(
             onPressed: () {},
-            backgroundColor: const Color(0XFFE9EDEF),
-            child: const Icon(Icons.edit,color: Colors.black54,),
+            // TODO: Delete this hard coded color
+            // backgroundColor: const Color(0XFFE9EDEF),
+            child: const Icon(
+              Icons.edit,
+              // TODO: Delete this hard coded color
+              // color: Colors.black54,
+            ),
           ),
         ),
         const SizedBox(height: 10),

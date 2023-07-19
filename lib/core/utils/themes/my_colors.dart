@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_flutter_clone/core/utils/themes/color_schemes.dart';
 
 class MyColors {
   /// Base Colors
@@ -95,6 +96,36 @@ class LightColors implements IColors {
       onTertiaryContainer: _colors.onyx,
       onPrimaryContainer: _colors.round
     );
+    brightness = Brightness.light;
+  }
+}
+
+
+/// Material Design 3 Light Theme
+class LightTheme implements IColors {
+  @override
+  final MyColors _colors = MyColors();
+
+  @override
+  ColorScheme? colorScheme;
+
+  @override
+  Color? appBarColor;
+
+  @override
+  Color? scaffoldBackgroundColor;
+
+  @override
+  Brightness? brightness;
+
+  @override
+  Color? primaryColor;
+
+  LightTheme() {
+    appBarColor = lightColorScheme.primaryContainer;
+    scaffoldBackgroundColor = lightColorScheme.background;
+    primaryColor = lightColorScheme.primary;
+    colorScheme = lightColorScheme;
     brightness = Brightness.light;
   }
 }

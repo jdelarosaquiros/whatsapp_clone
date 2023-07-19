@@ -22,7 +22,8 @@ class SelectImageFromGalleryButton extends StatelessWidget {
       },
       child: const CircleAvatar(
         radius: 30,
-        backgroundColor: Colors.black38,
+        // TODO: Delete this hard coded color
+        // backgroundColor: Colors.black38,
         child: Icon(
           Icons.photo,
           size: 30,

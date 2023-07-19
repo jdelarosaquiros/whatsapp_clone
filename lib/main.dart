@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:whatsapp_flutter_clone/features/presentation/controllers/call_cubit/call_cubit.dart';
 
-import 'core/utils/thems/my_colors.dart';
+import 'core/utils/themes/my_colors.dart';
 import 'core/shared/bloc_observer.dart';
 import 'core/utils/constants/strings_manager.dart';
 import 'core/utils/routes/routes_manager.dart';
 import 'core/services/services_locator.dart' as di;
-import 'core/utils/thems/theme_manager.dart';
+import 'core/utils/themes/theme_manager.dart';
 import 'features/presentation/controllers/auth_cubit/auth_cubit.dart';
 import 'features/presentation/controllers/bottom_chat_cubit/bottom_chat_cubit.dart';
 import 'features/presentation/controllers/chat_background_cubit/chat_background_cubit.dart';
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: AppStrings.appName,
         debugShowCheckedModeBanner: false,
-        theme: createTheme(LightColors()),
+        theme: createTheme(LightTheme()),
         onGenerateRoute: AppRoutes.onGenerateRoute,
         initialRoute: Routes.splashRoute,
       ),
